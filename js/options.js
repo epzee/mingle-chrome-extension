@@ -1,7 +1,5 @@
 (function () {
 
-    $('#flash').hide();
-
     $('#mingleURL').val(localStorage.mingleURL || localStorage.defaultUrl);
 
     $('#save').click(function(e) {
@@ -10,9 +8,16 @@
         localStorage.mingleURL = $('#mingleURL').val();
       
         $('#flash')
-                .fadeIn()
-                .delay(2000)
-                .fadeOut();
+            .removeClass('hidden')
+            .addClass("highlight");
+
+        setTimeout(function () {
+
+            $('#flash')
+                .addClass('hidden')
+                .removeClass("highlight"); 
+
+        }, 2000);
     });
 
 }());
