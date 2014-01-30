@@ -1,0 +1,11 @@
+{
+    "name": "Go to Mingle!",
+    "version": "0.0.2",
+    "manifest_version": 2,
+    "description": "by gu",
+    "options_page": "options.html",
+    "browser_action": {
+      "default_icon": "assets/icon.png",
+      "default_popup": "popup.html"
+    }
+}
