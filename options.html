@@ -1,38 +1,30 @@
 <!doctype html>
 <html>
-<head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <head>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
 
-</head>
+        <div class="container">
 
-<body>
+            <form class="form-inline" role="form">
+                <fieldset>
+                    <legend>Options</legend>
 
-    <div class="container">
+                    <div class="form-group col-xs-11">
+                        <input type="email" class="form-control" id="mingleURL" placeholder="Mingle cards url">
+                    </div>
 
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>Options</legend>
+                    <button type="submit" class="btn btn-success btn-save" id="save">Save</button>
 
-                <div class="control-group">
-                  <label class="control-label" for="mingleURL">Cards URL:</label>
-                  <div class="controls">
-                    <input type="text" id="mingleURL" name="mingleURL" class="input-xlarge url" value="" />                    
-                  </div>
-                </div>
+                </fieldset>
+            </form>
 
-                <div class="form-actions">
-                    <button class="btn btn-large btn-success save" id="save">Save</button>
-                </div>
-            </fieldset>
-                      
-            <div id="flash" class="alert alert-success hidden">Options saved!</div>
-        </form>
+            <div id="flash" class="alert alert-success alert-save hidden"><strong>Options saved!</strong></div>
+        </div>  
 
-    </div>  
-
-    <!-- JavaScript and HTML must be in separate files for security. -->
-    <script type="text/javascript" src="js/zepto.min.js"></script>      
-    <script type="text/javascript" src="js/options.js"></script>
-</body>
+        <script type="text/javascript" src="js/zepto.min.js"></script>      
+        <script type="text/javascript" src="js/options.js"></script>
+    </body>
 </html>

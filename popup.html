@@ -1,21 +1,31 @@
 <!doctype html>
 <html>
-  <head>
-     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>    
+    <head>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>    
 
-    <div style="margin: 5px">
-        <div class="row-fluid">
-            <input type="text" id="storyId" name="storyId" class="input-small" value="" placeholder="Card # " autofocus />
-    
-            <div style="float:left"><a id="options" class="btn btn-small" href="#">+</a></div>
-            <div style="float:right"><button type="button" id="go" class="btn btn-small btn-go btn-warning" >Go!</button></div>                   
+        <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <input type="text" id="storyId" class="form-control card-number" placeholder="Card #" autofocus >
+              </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="options" class="btn btn-default">
+                    <span class="glyphicon glyphicon-cog" title="Options"></span>
+                </button>
+
+                <button type="button" id="go" class="btn btn-warning right">
+                    Go!
+                </button>
+            </div>
         </div>
-    </div>
 
-    <script type="text/javascript" src="js/zepto.min.js"></script>
-    <script type="text/javascript" src="js/popup.js"></script>     
-        
-  </body>
+        <script type="text/javascript" src="js/zepto.min.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>     
+            
+    </body>
 </html>

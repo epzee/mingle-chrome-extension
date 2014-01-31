@@ -1,11 +1,36 @@
+/* =========================== */
+/* ========== POPUP ========== */
+
+.container{
+    padding: 5px;
+}
+input.card-number{
+    width: 100px;
+}
+.right{
+    float: right;
+}
+.buttons{
+    margin-top: 5px;
+}
+
+/* ============================= */
+/* ========== OPTIONS ========== */
+
+.alert-save{
+    margin: 15px;
+}
+
+.btn-save{
+    width: 82px;
+}
+
 .hidden{
     display: none;
 }
 
 .highlight{
-
   -webkit-animation: highlight 2s ease-out;
-
 }
 
 @-webkit-keyframes highlight {
